@@ -8,12 +8,12 @@ from datetime import datetime
 # Set up logging
 setup_logging()
 
+
 class ProtocolLinkedin(BaseProtocol):
     def __init__(self, main_url):
         super().__init__(main_url)
         self.page_range = range(0, 1000, 25)
         self.urls = [f'{self.main_url}{page}' for page in self.page_range]
-
 
 
 class ScraperLinkedin(BaseScraper):

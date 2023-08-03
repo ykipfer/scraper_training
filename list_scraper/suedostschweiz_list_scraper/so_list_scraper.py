@@ -9,6 +9,7 @@ import math
 # Set up logging
 setup_logging()
 
+
 # Define Protocol class
 class ProtocolSuedostschweiz(BaseProtocol):
     def __init__(self, main_url):
