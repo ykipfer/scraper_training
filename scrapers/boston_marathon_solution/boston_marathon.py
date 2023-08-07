@@ -1,4 +1,5 @@
 import asyncio
+import logging
 import re
 import math
 import csv
@@ -25,7 +26,9 @@ class BostonScraper:
         # If the total number of search results was found, calculate the number of pages
         if match:
             total_results = int(match.group(1))
+            logging.info(f'Total number of results found: {total_results}')
             pages = math.ceil(total_results / 25)
+            logging.info(f'Number of Pages to scrape: {pages}')
         else:
             pages = 0
 
@@ -63,6 +66,8 @@ class BostonScraper:
 
             # Iterate through the pages
             for i in range(self.pages):
+
+                logging.info(f'Scraping Page {i} of {self.pages}')
 
                 # Get the table element
                 table = await page.query_selector('.tablegrid_table')
@@ -124,6 +129,7 @@ class BostonScraper:
 
             # Append the Results instance to the results list
             self.results.append(result)
+            logging.info(f'{len(self.results)} results scraped')
 
     def save_data(self):
         # Save the data to a CSV file
