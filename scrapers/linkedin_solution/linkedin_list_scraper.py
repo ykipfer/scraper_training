@@ -1,8 +1,8 @@
+import requests
+import re
 from models import Ad, BaseProtocol, BaseScraper
 from utilities import setup_logging
-import requests
 from bs4 import BeautifulSoup
-import re
 from datetime import datetime
 
 # Set up logging

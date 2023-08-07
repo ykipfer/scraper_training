@@ -1,5 +1,6 @@
-from datetime import datetime, timedelta
 import csv
+from datetime import datetime, timedelta
+
 
 
 class Ad:

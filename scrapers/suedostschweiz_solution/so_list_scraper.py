@@ -1,10 +1,10 @@
 # Import necessary modules
+import requests
+import math
 from models import Ad, BaseProtocol, BaseScraper
 from utilities import setup_logging
-import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
-import math
 
 # Set up logging
 setup_logging()
