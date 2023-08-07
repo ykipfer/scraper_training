@@ -1,4 +1,4 @@
-from list_scraper.models import Ad, BaseProtocol, BaseScraper
+from models import Ad, BaseProtocol, BaseScraper
 from utilities import setup_logging
 import requests
 from bs4 import BeautifulSoup

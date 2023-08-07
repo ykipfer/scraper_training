@@ -1,6 +1,7 @@
 from datetime import datetime, timedelta
 import csv
 
+
 class Ad:
 
     def __init__(self):
@@ -58,3 +59,37 @@ class BaseScraper:
             writer.writeheader()
             for ad in ads_list:
                 writer.writerow(ad.to_dict())
+
+
+class RaceResult:
+    def __init__(self):
+        self.year = None
+        self.bib = None
+        self.name = None
+        self.age = None
+        self.gender = None
+        self.city = None
+        self.state = None
+        self.country = None
+        self.ranking_overall = None
+        self.ranking_gender = None
+        self.ranking_division = None
+        self.official_time = None
+        self.net_time = None
+
+    def to_dict(self):
+        return {
+            "year": self.year,
+            "bib": self.bib,
+            "name": self.name,
+            "age": self.age,
+            "gender": self.gender,
+            "city": self.city,
+            "state": self.state,
+            "country": self.country,
+            "ranking_overall": self.ranking_overall,
+            "ranking_gender": self.ranking_gender,
+            "ranking_division": self.ranking_division,
+            "official_time": self.official_time,
+            "net_time": self.net_time
+        }
