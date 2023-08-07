@@ -4,6 +4,7 @@ venv
 
 # files
 output
+*.log
 
 # Mac
 .DS_Store
