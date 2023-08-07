@@ -3,8 +3,10 @@
 Create a Scraper goes to the following link: http://registration.baa.org/cfm_Archive/iframe_ArchiveSearch.cfm and scrapes
 all results from 2019.
 
-Since we are dealing with form data, we need to use [playwright](https://playwright.dev) or [selenium](https://www.selenium.dev) to scrape the results. I recommend using playwright, since the setup is much easier.
+Since we are dealing with forms, we need to use [playwright](https://playwright.dev) or [selenium](https://www.selenium.dev) to scrape the results. I recommend using playwright, since the setup is much easier.
 To start use `sync_playwright` to create a synchronous scraper.
+
+Hint: To handle selecting dropdown options see [here](https://playwright.dev/python/docs/api/class-elementhandle#element-handle-select-option) and to click on buttons see [here](https://playwright.dev/python/docs/api/class-page#page-click).
 
 
 ## Setup
