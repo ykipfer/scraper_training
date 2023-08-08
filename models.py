@@ -2,7 +2,6 @@ import csv
 from datetime import datetime, timedelta
 
 
-
 class Ad:
 
     def __init__(self):
@@ -23,6 +22,7 @@ class Ad:
             "date_published": self.date_published
         }
 
+
 class BaseProtocol:
 
     def __init__(self, main_url):
@@ -40,6 +40,7 @@ class BaseProtocol:
     def filter_ads(self):
         # Filter out ads that are older than 7 days
         self.ads = [ad for ad in self.ads if ad.date_published > (datetime.now() - timedelta(days=7)).date()]
+
 
 class BaseScraper:
 
