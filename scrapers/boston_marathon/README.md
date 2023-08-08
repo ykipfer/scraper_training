@@ -1,7 +1,7 @@
 # Boston Marathon Scraper
 
 Create a Scraper goes to the following link: http://registration.baa.org/cfm_Archive/iframe_ArchiveSearch.cfm and scrapes
-all results from 2019.
+all results from 2019. Save the results to a CSV and save it under `output/results.csv`.
 
 Since we are dealing with forms, we need to use [playwright](https://playwright.dev) or [selenium](https://www.selenium.dev) to scrape the results. I recommend using playwright, since the setup is much easier.
 To start use `sync_playwright` to create a synchronous scraper.

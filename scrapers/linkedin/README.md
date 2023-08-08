@@ -8,7 +8,7 @@ Create a scraper that will go to [LinkedIn](https://www.linkedin.com/jobs/search
 - url to ad content
 - ad company
 
-Only scrape ads that are no older than 7 days.
+Only scrape ads that are no older than 7 days and save the results under `output/ads.csv`.
 
 ## Setup
 Use the following modules to create the scraper:
