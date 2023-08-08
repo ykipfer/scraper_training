@@ -6,7 +6,7 @@ class Dog:
         self.age = age
 
     def bark(self):
-        print(f"Woof.")
+        print("Woof!")
 
     def birthday(self):
         self.age += 1
