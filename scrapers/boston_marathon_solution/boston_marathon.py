@@ -96,7 +96,7 @@ class BostonScraper:
             self.save_data()
 
     def parse_table(self, table_html):
-        soup = BeautifulSoup(table_html, 'html.parser')
+        soup = BeautifulSoup(table_html, 'lxml')
 
         # Find all main rows
         main_rows = soup.select('tr.tr_header')
